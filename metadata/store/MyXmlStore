@@ -22,7 +22,7 @@
             "codeClass": null,
             "userConfig": {
                 "noCache": false,
-                "url": "http://localhost/Sencha/xml/words.xml"
+                "url": "http://tecmo.webfactional.com/gre/words.xml"
             },
             "designerId": "0a776b47-b9fa-485c-86bc-260fb914d5a5",
             "cn": [
