@@ -1,0 +1,55 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "RSSModel"
+    },
+    "designerId": "38fd4200-6d09-48d9-9445-57ee7acdc3b5",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "@id",
+                "name": "word"
+            },
+            "designerId": "8ca5a53b-eaf8-4a75-99c0-03b6d17d7402"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "@definition",
+                "name": "definition",
+                "designer|displayName": "definition"
+            },
+            "designerId": "5c050152-1353-4e92-a644-cb2a0f1afd57"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "@type",
+                "name": "type",
+                "designer|displayName": "type"
+            },
+            "designerId": "780076d8-065e-4dd4-aff4-98e38bc0e03f"
+        }
+    ]
+}

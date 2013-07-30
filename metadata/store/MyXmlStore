@@ -1,0 +1,58 @@
+{
+    "type": "xmlstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "RSSModel",
+        "storeId": "MyXmlStore",
+        "designer|userClassName": "MyXmlStore"
+    },
+    "designerId": "1d383bac-3732-4d32-861c-5eb95dc5be6b",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://localhost/Sencha/xml/data/words.xml"
+            },
+            "designerId": "0a776b47-b9fa-485c-86bc-260fb914d5a5",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Xml",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "vocabulary",
+                        "record": "word"
+                    },
+                    "designerId": "8d1bb969-56e0-4e1b-b58f-d1d2e0cb6da1"
+                }
+            ]
+        },
+        {
+            "type": "Ext.util.Sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "property": "word",
+                "root": "data",
+                "designer|displayName": "word"
+            },
+            "designerId": "4353feb5-0b09-4fff-af3b-e77cc23023ee"
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "name": "xml",
+    "settings": {},
+    "xdsVersion": "2.2.2",
+    "xdsBuild": 991,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "touch22",
+    "topInstanceFileMap": {
+        "94da2721-3d8b-4d41-97d9-5d566c4b8cf9": {
+            "paths": [
+                "metadata/view/MyCarousel",
+                "app/view/override/MyCarousel.js",
+                "app/view/MyCarousel.js"
+            ],
+            "className": "MyCarousel"
+        },
+        "1d383bac-3732-4d32-861c-5eb95dc5be6b": {
+            "paths": [
+                "metadata/store/MyXmlStore",
+                "app/store/override/MyXmlStore.js",
+                "app/store/MyXmlStore.js"
+            ],
+            "className": "MyXmlStore"
+        },
+        "38fd4200-6d09-48d9-9445-57ee7acdc3b5": {
+            "paths": [
+                "metadata/model/RSSModel",
+                "app/model/override/RSSModel.js",
+                "app/model/RSSModel.js"
+            ],
+            "className": "RSSModel"
+        },
+        "3cddd8de-888e-4df5-b1e1-bed10c726057": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "8b5aa7ef-6bb1-44c7-ab8a-f637ae33274d": {
+            "paths": [
+                "metadata/model/MyModel",
+                "app/model/override/MyModel.js",
+                "app/model/MyModel.js"
+            ],
+            "className": "MyModel"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "94da2721-3d8b-4d41-97d9-5d566c4b8cf9"
+        ],
+        "store": [
+            "1d383bac-3732-4d32-861c-5eb95dc5be6b"
+        ],
+        "controller": [],
+        "model": [
+            "38fd4200-6d09-48d9-9445-57ee7acdc3b5",
+            "8b5aa7ef-6bb1-44c7-ab8a-f637ae33274d"
+        ],
+        "resource": [
+            "3cddd8de-888e-4df5-b1e1-bed10c726057"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

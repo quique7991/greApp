@@ -1,0 +1,22 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "RSSModel",
+            "MyModel"
+        ],
+        "stores": [
+            "MyXmlStore"
+        ],
+        "views": [
+            "MyCarousel"
+        ],
+        "name": "MyApp"
+    },
+    "designerId": "application"
+}
