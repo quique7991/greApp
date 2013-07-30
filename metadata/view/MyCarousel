@@ -58,7 +58,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "store": "MyXmlStore"
+                "store": "MyXmlStore",
+                "grouped": true
             },
             "designerId": "ed9555b6-5401-4a05-bf6b-cccfc68a86c0",
             "cn": [
@@ -71,7 +72,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "implHandler": [
-                            "<div> <b> Word: </b> {word} <b> <br> Definition: </b> <i>{definition} </i> <br> <b> Type: </b> <i>{type} </i> </div>"
+                            "<div> <font size=\"5\">{word} </font> <b> <br> Definition: </b> <i>{definition} </i> <br> <b> Type: </b> <i>{type} </i> </div>"
                         ],
                         "designer|displayName": "itemTpl"
                     },
@@ -89,6 +90,88 @@
                         "title": "Words"
                     },
                     "designerId": "24feafd6-2c7b-4f7f-8d33-902de6ef9e64"
+                },
+                {
+                    "type": "Ext.dataview.IndexBar",
+                    "reference": {
+                        "name": "indexBar",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "e7435a2d-bdf6-48b3-9b95-8260d4169ad4"
+                },
+                {
+                    "type": "Ext.field.Search",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "centered": false,
+                        "docked": "top",
+                        "height": null,
+                        "itemId": "mysearchfield",
+                        "label": "Search"
+                    },
+                    "designerId": "0eecf058-e637-4ed6-b252-99fa9ecb61e4",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onMysearchfieldKeyup",
+                                "implHandler": [
+                                    "var value = textfield.getValue();//Get the textfield value;",
+                                    "store = Ext.getStore('MyXmlStore');//getting the store that drives the xml store",
+                                    "store.clearFilter();",
+                                    "var x = 0;",
+                                    "",
+                                    "if(value){//>check first if value is set.",
+                                    "    //if(false){",
+                                    "    /* var searches = value.split(' '),",
+                                    "    regexps = [],  ",
+                                    "    i;  ",
+                                    "",
+                                    "    for(i = 0; i < searches.length;i++){",
+                                    "    if(!searches[i]) continue;",
+                                    "    regexps.push(new RegExp(searches[i],\"i\"));        ",
+                                    "    }",
+                                    "    store.filter(function(record) {  ",
+                                    "    var matched = [];",
+                                    "    //loop through each of the regular expressions  ",
+                                    "",
+                                    "    //for (i = 0; i < regexps.length; i++) {  ",
+                                    "    //alert(i);",
+                                    "    //var search = ;",
+                                    "    var   didMatch = record.get('word').match(regexps[0]);",
+                                    "",
+                                    "    matched.push(didMatch);  ",
+                                    "",
+                                    "    //}  //if nothing was found, return false (dont so in the store)                 ",
+                                    "",
+                                    "    if (regexps.length > 1 && matched.indexOf(false) != -1) {  ",
+                                    "        return false;  ",
+                                    "    } else {  ",
+                                    "        //else true true (show in the store)  ",
+                                    "        return matched[0];  ",
+                                    "    }  ",
+                                    "});*/",
+                                    "store.filter(\"word\",value);",
+                                    "//store.filterBy()",
+                                    "}",
+                                    "",
+                                    ""
+                                ],
+                                "name": "keyup"
+                            },
+                            "designerId": "1cfed987-8174-4eef-8a71-afd93d39534c"
+                        }
+                    ]
                 }
             ]
         }

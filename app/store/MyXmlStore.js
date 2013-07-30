@@ -26,7 +26,8 @@ Ext.define('MyApp.store.MyXmlStore', {
         storeId: 'MyXmlStore',
         proxy: {
             type: 'ajax',
-            url: 'http://localhost/Sencha/xml/data/words.xml',
+            noCache: false,
+            url: 'http://localhost/Sencha/xml/words.xml',
             reader: {
                 type: 'xml',
                 rootProperty: 'vocabulary',
@@ -36,6 +37,13 @@ Ext.define('MyApp.store.MyXmlStore', {
         sorters: {
             property: 'word',
             root: 'data'
+        },
+        grouper: {
+            groupFn: function(item) {
+                return item.get('word')[0].toUpperCase();
+
+
+            }
         }
     }
 });

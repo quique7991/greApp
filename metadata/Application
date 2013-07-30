@@ -18,5 +18,16 @@
         ],
         "name": "MyApp"
     },
-    "designerId": "application"
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "Ext.Loader",
+            "reference": {
+                "name": "loader",
+                "type": "object"
+            },
+            "codeClass": null,
+            "designerId": "e7d3b27c-aa9c-40a5-93d5-e6c15f40702e"
+        }
+    ]
 }

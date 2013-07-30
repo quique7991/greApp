@@ -21,7 +21,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "http://localhost/Sencha/xml/data/words.xml"
+                "noCache": false,
+                "url": "http://localhost/Sencha/xml/words.xml"
             },
             "designerId": "0a776b47-b9fa-485c-86bc-260fb914d5a5",
             "cn": [
@@ -53,6 +54,42 @@
                 "designer|displayName": "word"
             },
             "designerId": "4353feb5-0b09-4fff-af3b-e77cc23023ee"
+        },
+        {
+            "type": "Ext.util.Grouper",
+            "reference": {
+                "name": "grouper",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "property": null,
+                "root": null,
+                "sortProperty": null
+            },
+            "designerId": "9ce3a504-877f-4b8f-9542-2dfe155b1c2f",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "groupFn",
+                        "designer|params": [
+                            "item"
+                        ],
+                        "implHandler": [
+                            "return item.get('word')[0].toUpperCase();",
+                            "",
+                            ""
+                        ]
+                    },
+                    "designerId": "932e2799-18c7-4fb7-8d22-ffc381729558"
+                }
+            ]
         }
     ]
 }
