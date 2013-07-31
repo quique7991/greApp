@@ -25,16 +25,6 @@ Ext.define('MyApp.store.MyXmlStore', {
         autoSync: true,
         model: 'MyApp.model.RSSModel',
         storeId: 'MyXmlStore',
-        proxy: {
-            type: 'ajax',
-            url: 'http://tecmo.webfactional.com/gre/words.xml',
-            useDefaultXhrHeader: false,
-            reader: {
-                type: 'xml',
-                rootProperty: 'vocabulary',
-                record: 'word'
-            }
-        },
         sorters: {
             property: 'word',
             root: 'data'
@@ -44,6 +34,15 @@ Ext.define('MyApp.store.MyXmlStore', {
                 return item.get('word')[0].toUpperCase();
 
 
+            }
+        },
+        proxy: {
+            type: 'ajax',
+            url: 'http://tecmo.webfactional.com/gre/xml/words.xml',
+            reader: {
+                type: 'xml',
+                rootProperty: 'vocabulary',
+                record: 'word'
             }
         }
     }

@@ -51,43 +51,16 @@ Ext.define('MyApp.view.MyList', {
     onMysearchfieldKeyup: function(textfield, e, eOpts) {
         var value = textfield.getValue();//Get the textfield value;
         store = Ext.getStore('MyXmlStore');//getting the store that drives the xml store
-        store.clearFilter();
-        var x = 0;
 
-        if(value){//>check first if value is set.
-            //if(false){
-            /* var searches = value.split(' '),
-            regexps = [],  
-            i;  
-
-            for(i = 0; i < searches.length;i++){
-            if(!searches[i]) continue;
-            regexps.push(new RegExp(searches[i],"i"));        
-            }
-            store.filter(function(record) {  
-            var matched = [];
-            //loop through each of the regular expressions  
-
-            //for (i = 0; i < regexps.length; i++) {  
-            //alert(i);
-            //var search = ;
-            var   didMatch = record.get('word').match(regexps[0]);
-
-            matched.push(didMatch);  
-
-            //}  //if nothing was found, return false (dont so in the store)                 
-
-            if (regexps.length > 1 && matched.indexOf(false) != -1) {  
-                return false;  
-            } else {  
-                //else true true (show in the store)  
-                return matched[0];  
-            }  
-        });*/
-        store.filter("word",value);
-        //store.filterBy()
-    }
-
+        //store.clearFilter();
+        if(value!==''){
+            store.filter("word",value);
+        }
+        else{
+            store.clearFilter();
+            //    store.destroy();
+            //    store = Ext.create('Ext.data.Store',{model: 'MyApp.model.RSSModel'});
+        }
 
     }
 

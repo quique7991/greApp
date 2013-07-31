@@ -15,34 +15,6 @@
     "designerId": "1d383bac-3732-4d32-861c-5eb95dc5be6b",
     "cn": [
         {
-            "type": "Ext.data.proxy.Ajax",
-            "reference": {
-                "name": "proxy",
-                "type": "object"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "url": "http://tecmo.webfactional.com/gre/words.xml",
-                "useDefaultXhrHeader": false
-            },
-            "designerId": "0a776b47-b9fa-485c-86bc-260fb914d5a5",
-            "cn": [
-                {
-                    "type": "Ext.data.reader.Xml",
-                    "reference": {
-                        "name": "reader",
-                        "type": "object"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "rootProperty": "vocabulary",
-                        "record": "word"
-                    },
-                    "designerId": "8d1bb969-56e0-4e1b-b58f-d1d2e0cb6da1"
-                }
-            ]
-        },
-        {
             "type": "Ext.util.Sorter",
             "reference": {
                 "name": "sorters",
@@ -89,6 +61,33 @@
                         ]
                     },
                     "designerId": "932e2799-18c7-4fb7-8d22-ffc381729558"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://tecmo.webfactional.com/gre/xml/words.xml"
+            },
+            "designerId": "79059a52-4326-4444-8e3a-1b6f8013761a",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Xml",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "vocabulary",
+                        "record": "word"
+                    },
+                    "designerId": "d9ddd141-0bfc-4bd0-a966-cf05f0592d5c"
                 }
             ]
         }
