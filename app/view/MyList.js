@@ -29,6 +29,7 @@ Ext.define('MyApp.view.MyList', {
             {
                 xtype: 'toolbar',
                 docked: 'top',
+                itemId: 'mytoolbar',
                 title: 'Words',
                 items: [
                     {
@@ -37,6 +38,18 @@ Ext.define('MyApp.view.MyList', {
                             Ext.getCmp('tabPanel').setActiveItem(Ext.getCmp('myContainer'));
                         },
                         text: 'Back'
+                    }
+                ],
+                listeners: [
+                    {
+                        fn: function(component, eOpts) {
+                            this.element.on('tap',function(){
+                                store = Ext.getStore('MyXmlStore');//getting the store that drives the xml store
+                                store.load();
+                            });
+
+                        },
+                        event: 'initialize'
                     }
                 ]
             },
@@ -58,6 +71,10 @@ Ext.define('MyApp.view.MyList', {
                 fn: 'onMysearchfieldClearicontap',
                 event: 'clearicontap',
                 delegate: '#mysearchfield'
+            },
+            {
+                fn: 'onMyListInitialize',
+                event: 'initialize'
             }
         ]
     },
@@ -81,6 +98,10 @@ Ext.define('MyApp.view.MyList', {
     onMysearchfieldClearicontap: function(textfield, e, eOpts) {
         store = Ext.getStore('MyXmlStore');
         store.clearFilter();
+    },
+
+    onMyListInitialize: function(component, eOpts) {
+        this.setLoadingText(null);
     }
 
 });

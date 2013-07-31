@@ -38,6 +38,7 @@
             "codeClass": null,
             "userConfig": {
                 "docked": "top",
+                "itemId": "mytoolbar",
                 "title": "Words"
             },
             "designerId": "24feafd6-2c7b-4f7f-8d33-902de6ef9e64",
@@ -74,6 +75,26 @@
                             "designerId": "1baf0a99-2bc0-491d-b455-507ebb8b6fd5"
                         }
                     ]
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onMytoolbarInitialize",
+                        "implHandler": [
+                            "this.element.on('tap',function(){",
+                            "\tstore = Ext.getStore('MyXmlStore');//getting the store that drives the xml store",
+                            "    store.load();",
+                            "});",
+                            ""
+                        ],
+                        "name": "initialize"
+                    },
+                    "designerId": "edd3b126-c639-47b5-8931-7d38f466f5a2"
                 }
             ]
         },
@@ -121,8 +142,8 @@
                             "}",
                             "else{\t",
                             "    store.clearFilter();",
-                            "//    store.destroy();",
-                            "//    store = Ext.create('Ext.data.Store',{model: 'MyApp.model.RSSModel'});",
+                            "    //    store.destroy();",
+                            "    //    store = Ext.create('Ext.data.Store',{model: 'MyApp.model.RSSModel'});",
                             "}",
                             ""
                         ],
@@ -148,6 +169,22 @@
                     "designerId": "995087b5-4d0c-4244-b6df-a43f2757a220"
                 }
             ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onMyListInitialize",
+                "implHandler": [
+                    "this.setLoadingText(null);"
+                ],
+                "name": "initialize"
+            },
+            "designerId": "0a2e3cca-830e-4377-b251-aae99f4de70b"
         }
     ]
 }
