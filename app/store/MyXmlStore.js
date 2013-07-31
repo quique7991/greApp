@@ -38,7 +38,8 @@ Ext.define('MyApp.store.MyXmlStore', {
         },
         proxy: {
             type: 'ajax',
-            url: 'http://tecmo.webfactional.com/gre/xml/words.xml',
+            url: 'http://tecmo.webfactional.com/gre/words.xml',
+            useDefaultXhrHeader: false,
             reader: {
                 type: 'xml',
                 rootProperty: 'vocabulary',

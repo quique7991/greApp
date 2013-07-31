@@ -72,7 +72,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "http://tecmo.webfactional.com/gre/xml/words.xml"
+                "url": "http://tecmo.webfactional.com/gre/words.xml",
+                "useDefaultXhrHeader": false
             },
             "designerId": "79059a52-4326-4444-8e3a-1b6f8013761a",
             "cn": [

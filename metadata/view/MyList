@@ -84,8 +84,8 @@
                             "if(value!==''){",
                             "    store.filter(\"word\",value);",
                             "}",
-                            "else{",
-                            "\tstore.clearFilter();",
+                            "else{\t",
+                            "    store.clearFilter();",
                             "//    store.destroy();",
                             "//    store = Ext.create('Ext.data.Store',{model: 'MyApp.model.RSSModel'});",
                             "}",
@@ -94,6 +94,23 @@
                         "name": "keyup"
                     },
                     "designerId": "1cfed987-8174-4eef-8a71-afd93d39534c"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onMysearchfieldClearicontap",
+                        "implHandler": [
+                            "store = Ext.getStore('MyXmlStore');",
+                            "store.clearFilter();"
+                        ],
+                        "name": "clearicontap"
+                    },
+                    "designerId": "995087b5-4d0c-4244-b6df-a43f2757a220"
                 }
             ]
         }

@@ -44,6 +44,11 @@ Ext.define('MyApp.view.MyList', {
                 fn: 'onMysearchfieldKeyup',
                 event: 'keyup',
                 delegate: '#mysearchfield'
+            },
+            {
+                fn: 'onMysearchfieldClearicontap',
+                event: 'clearicontap',
+                delegate: '#mysearchfield'
             }
         ]
     },
@@ -56,12 +61,17 @@ Ext.define('MyApp.view.MyList', {
         if(value!==''){
             store.filter("word",value);
         }
-        else{
+        else{	
             store.clearFilter();
             //    store.destroy();
             //    store = Ext.create('Ext.data.Store',{model: 'MyApp.model.RSSModel'});
         }
 
+    },
+
+    onMysearchfieldClearicontap: function(textfield, e, eOpts) {
+        store = Ext.getStore('MyXmlStore');
+        store.clearFilter();
     }
 
 });
