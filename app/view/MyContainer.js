@@ -38,7 +38,7 @@ Ext.define('MyApp.view.MyContainer', {
                 docked: 'bottom',
                 height: '37%',
                 itemId: 'myimg1',
-                src: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMZ_U-1Gk9vNnINGJ3rAR_YmpA6Y7F9NxPUdeffmSCS_1SnYGf72lciWE8'
+                src: 'http://tecmo.webfactional.com/gre/learn.png'
             }
         ],
         listeners: [

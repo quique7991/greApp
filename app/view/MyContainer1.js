@@ -28,7 +28,7 @@ Ext.define('MyApp.view.MyContainer1', {
                 xtype: 'container',
                 docked: 'top',
                 height: '10%',
-                html: 'Today is a great day :)',
+                html: '<center><b>Today is a great day :)</b></center>',
                 id: 'myContainer2',
                 left: '12.5%',
                 style: '',
