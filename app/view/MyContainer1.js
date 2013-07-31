@@ -31,7 +31,7 @@ Ext.define('MyApp.view.MyContainer1', {
                 html: 'Today is a great day :)',
                 id: 'myContainer2',
                 left: '12.5%',
-                style: 'background-color:white',
+                style: '',
                 top: '7.5%',
                 width: '75%'
             },
@@ -56,7 +56,7 @@ Ext.define('MyApp.view.MyContainer1', {
                 height: '35%',
                 id: 'myContainer3',
                 left: '12.5%',
-                style: 'background-color:white',
+                style: '',
                 top: '40%',
                 width: '75%'
             },
@@ -87,9 +87,9 @@ Ext.define('MyApp.view.MyContainer1', {
                     container3.setHtml('');
                     definition = store.getAt(id).get('definition');
                 },
-                left: '20%',
+                left: '25%',
                 top: '80%',
-                width: '60%',
+                width: '50%',
                 text: 'New Word'
             }
         ]

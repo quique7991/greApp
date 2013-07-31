@@ -27,7 +27,7 @@
                 "html": "Today is a great day :)",
                 "id": "myContainer2",
                 "left": "12.5%",
-                "style": "background-color:white",
+                "style": "",
                 "top": "7.5%",
                 "width": "75%"
             },
@@ -87,7 +87,7 @@
                 "height": "35%",
                 "id": "myContainer3",
                 "left": "12.5%",
-                "style": "background-color:white",
+                "style": "",
                 "top": "40%",
                 "width": "75%"
             },
@@ -149,9 +149,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "left": "20%",
+                "left": "25%",
                 "top": "80%",
-                "width": "60%",
+                "width": "50%",
                 "iconCls": null,
                 "text": "New Word"
             },
