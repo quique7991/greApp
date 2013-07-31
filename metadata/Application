@@ -14,7 +14,9 @@
             "MyXmlStore"
         ],
         "views": [
-            "MyCarousel"
+            "MyList",
+            "MyContainer",
+            "MyTabPanel"
         ],
         "name": "MyApp"
     },

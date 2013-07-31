@@ -7,14 +7,6 @@
     "upgradeVersion": 210000000503,
     "framework": "touch22",
     "topInstanceFileMap": {
-        "94da2721-3d8b-4d41-97d9-5d566c4b8cf9": {
-            "paths": [
-                "metadata/view/MyCarousel",
-                "app/view/override/MyCarousel.js",
-                "app/view/MyCarousel.js"
-            ],
-            "className": "MyCarousel"
-        },
         "1d383bac-3732-4d32-861c-5eb95dc5be6b": {
             "paths": [
                 "metadata/store/MyXmlStore",
@@ -44,11 +36,37 @@
                 "app/model/MyModel.js"
             ],
             "className": "MyModel"
+        },
+        "9c031cd6-b7a5-4501-b5e9-dc913b6443c8": {
+            "paths": [
+                "metadata/view/MyList",
+                "app/view/override/MyList.js",
+                "app/view/MyList.js"
+            ],
+            "className": "MyList"
+        },
+        "7b7278b1-4dfe-49be-9015-2134b727970e": {
+            "paths": [
+                "metadata/view/MyContainer",
+                "app/view/override/MyContainer.js",
+                "app/view/MyContainer.js"
+            ],
+            "className": "MyContainer"
+        },
+        "256cd3f8-d3a9-468e-b5d4-5e63d5c84abf": {
+            "paths": [
+                "metadata/view/MyTabPanel",
+                "app/view/override/MyTabPanel.js",
+                "app/view/MyTabPanel.js"
+            ],
+            "className": "MyTabPanel"
         }
     },
     "viewOrderMap": {
         "view": [
-            "94da2721-3d8b-4d41-97d9-5d566c4b8cf9"
+            "9c031cd6-b7a5-4501-b5e9-dc913b6443c8",
+            "7b7278b1-4dfe-49be-9015-2134b727970e",
+            "256cd3f8-d3a9-468e-b5d4-5e63d5c84abf"
         ],
         "store": [
             "1d383bac-3732-4d32-861c-5eb95dc5be6b"

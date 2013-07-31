@@ -27,13 +27,15 @@ Ext.application({
         'MyXmlStore'
     ],
     views: [
-        'MyCarousel'
+        'MyList',
+        'MyContainer',
+        'MyTabPanel'
     ],
     name: 'MyApp',
 
     launch: function() {
 
-        Ext.create('MyApp.view.MyCarousel', {fullscreen: true});
+        Ext.create('MyApp.view.MyTabPanel', {fullscreen: true});
     }
 
 });

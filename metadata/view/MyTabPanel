@@ -1,0 +1,55 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "tabPanel",
+        "designer|userClassName": "MyTabPanel",
+        "designer|initialView": true
+    },
+    "designerId": "256cd3f8-d3a9-468e-b5d4-5e63d5c84abf",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "info"
+            },
+            "designerId": "5866a90a-af30-4bb1-8102-97081433c53c",
+            "masterInstanceId": "7b7278b1-4dfe-49be-9015-2134b727970e"
+        },
+        {
+            "type": "Ext.tab.Bar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom",
+                "hidden": true
+            },
+            "designerId": "262dd4b6-e1c9-47f6-830b-67f66df92558"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "info"
+            },
+            "designerId": "6d958f54-55ba-4f84-913e-0cb0c903b8cd",
+            "masterInstanceId": "9c031cd6-b7a5-4501-b5e9-dc913b6443c8"
+        }
+    ]
+}
