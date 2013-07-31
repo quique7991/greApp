@@ -30,7 +30,7 @@
             "designerId": "91674512-6c7f-4139-86da-b7d82484a571"
         },
         {
-            "type": "Ext.TitleBar",
+            "type": "Ext.Toolbar",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -40,7 +40,42 @@
                 "docked": "top",
                 "title": "Words"
             },
-            "designerId": "24feafd6-2c7b-4f7f-8d33-902de6ef9e64"
+            "designerId": "24feafd6-2c7b-4f7f-8d33-902de6ef9e64",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Back"
+                    },
+                    "designerId": "b632c0e1-be39-4870-a206-d018dd7d46f7",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    "Ext.getCmp('tabPanel').setActiveItem(Ext.getCmp('myContainer'));"
+                                ]
+                            },
+                            "designerId": "1baf0a99-2bc0-491d-b455-507ebb8b6fd5"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "type": "Ext.dataview.IndexBar",

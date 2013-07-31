@@ -27,9 +27,18 @@ Ext.define('MyApp.view.MyList', {
         ],
         items: [
             {
-                xtype: 'titlebar',
+                xtype: 'toolbar',
                 docked: 'top',
-                title: 'Words'
+                title: 'Words',
+                items: [
+                    {
+                        xtype: 'button',
+                        handler: function(button, event) {
+                            Ext.getCmp('tabPanel').setActiveItem(Ext.getCmp('myContainer'));
+                        },
+                        text: 'Back'
+                    }
+                ]
             },
             {
                 xtype: 'searchfield',

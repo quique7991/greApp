@@ -29,7 +29,8 @@ Ext.application({
     views: [
         'MyList',
         'MyContainer',
-        'MyTabPanel'
+        'MyTabPanel',
+        'MyContainer1'
     ],
     name: 'MyApp',
 

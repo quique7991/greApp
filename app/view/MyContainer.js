@@ -27,11 +27,18 @@ Ext.define('MyApp.view.MyContainer', {
             },
             {
                 xtype: 'image',
-                height: '40%',
+                height: '60%',
                 itemId: 'myimg',
                 top: '20%',
                 width: '100%',
                 src: 'http://www.skill-guru.com/gre/wp-content/uploads/2011/02/GRE.jpg'
+            },
+            {
+                xtype: 'image',
+                docked: 'bottom',
+                height: '37%',
+                itemId: 'myimg1',
+                src: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMZ_U-1Gk9vNnINGJ3rAR_YmpA6Y7F9NxPUdeffmSCS_1SnYGf72lciWE8'
             }
         ],
         listeners: [
@@ -39,12 +46,21 @@ Ext.define('MyApp.view.MyContainer', {
                 fn: 'onMyimgTap',
                 event: 'tap',
                 delegate: '#myimg'
+            },
+            {
+                fn: 'onMyimg1Tap',
+                event: 'tap',
+                delegate: '#myimg1'
             }
         ]
     },
 
     onMyimgTap: function(image, e, eOpts) {
         Ext.getCmp('tabPanel').setActiveItem(Ext.getCmp('myList'));
+    },
+
+    onMyimg1Tap: function(image, e, eOpts) {
+        Ext.getCmp('tabPanel').setActiveItem(Ext.getCmp('myContainer1'));
     }
 
 });

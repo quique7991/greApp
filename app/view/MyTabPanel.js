@@ -18,7 +18,8 @@ Ext.define('MyApp.view.MyTabPanel', {
 
     requires: [
         'MyApp.view.MyContainer',
-        'MyApp.view.MyList'
+        'MyApp.view.MyList',
+        'MyApp.view.MyContainer1'
     ],
 
     config: {
@@ -30,6 +31,10 @@ Ext.define('MyApp.view.MyTabPanel', {
             },
             {
                 xtype: 'mylist',
+                iconCls: 'info'
+            },
+            {
+                xtype: 'mycontainer11',
                 iconCls: 'info'
             }
         ],

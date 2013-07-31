@@ -50,6 +50,19 @@
             },
             "designerId": "6d958f54-55ba-4f84-913e-0cb0c903b8cd",
             "masterInstanceId": "9c031cd6-b7a5-4501-b5e9-dc913b6443c8"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "info"
+            },
+            "designerId": "13c242c9-028e-4808-ae21-e6876f44a51f",
+            "masterInstanceId": "dfb063aa-37a3-4726-abff-6d5671dce896"
         }
     ]
 }

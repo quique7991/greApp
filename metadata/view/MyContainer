@@ -33,7 +33,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "height": "40%",
+                "height": "60%",
                 "itemId": "myimg",
                 "top": "20%",
                 "width": "100%",
@@ -56,6 +56,40 @@
                         "name": "tap"
                     },
                     "designerId": "4c38c762-9f32-46a1-b0b6-7aaf26b83b1c"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Img",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom",
+                "height": "37%",
+                "itemId": "myimg1",
+                "top": null,
+                "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMZ_U-1Gk9vNnINGJ3rAR_YmpA6Y7F9NxPUdeffmSCS_1SnYGf72lciWE8"
+            },
+            "designerId": "be2d8b71-ba13-4b97-a2b6-eacd6c04b0c2",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onMyimg1Tap",
+                        "implHandler": [
+                            "Ext.getCmp('tabPanel').setActiveItem(Ext.getCmp('myContainer1'));"
+                        ],
+                        "name": "tap"
+                    },
+                    "designerId": "cab19e8c-a1a1-4cfb-962e-2be08230dd73"
                 }
             ]
         }

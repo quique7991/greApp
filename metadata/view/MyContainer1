@@ -1,0 +1,190 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "myContainer1",
+        "ui": "",
+        "designer|userClassName": "MyContainer1",
+        "designer|userAlias": "mycontainer11",
+        "layout": "fit"
+    },
+    "designerId": "dfb063aa-37a3-4726-abff-6d5671dce896",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "height": "10%",
+                "html": "Today is a great day :)",
+                "id": "myContainer2",
+                "left": "12.5%",
+                "style": "background-color:white",
+                "top": "7.5%",
+                "width": "75%"
+            },
+            "designerId": "10e26480-dcc2-4c1d-b512-d52c5f8348da"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": false,
+                "left": "27.5%",
+                "top": "25%",
+                "ui": "forward",
+                "width": "45%",
+                "iconAlign": "center",
+                "iconCls": null,
+                "text": "I'm feeling lucky"
+            },
+            "designerId": "da29484b-0831-4a56-9fd6-b540b8768c1e",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "handler",
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "implHandler": [
+                            "container3 = Ext.getCmp('myContainer3');",
+                            "container3.setHtml('<font size=\"4\"><i>'+definition+'</i></font>');",
+                            ""
+                        ]
+                    },
+                    "designerId": "f77c588b-48c1-43ad-8612-a042f7c2d064"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom",
+                "height": "35%",
+                "id": "myContainer3",
+                "left": "12.5%",
+                "style": "background-color:white",
+                "top": "40%",
+                "width": "75%"
+            },
+            "designerId": "be6d22e1-0b95-4cce-8696-5f094bc77445"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "title": "Time to play"
+            },
+            "designerId": "75344e5e-488f-4cd5-8f3f-1c0e9f12c4dc",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Back"
+                    },
+                    "designerId": "251c5c49-3cbc-4d9d-801e-a88c19b1815e",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    "Ext.getCmp('tabPanel').setActiveItem(Ext.getCmp('myContainer'));"
+                                ]
+                            },
+                            "designerId": "abcc2aab-a82a-4fce-94f4-d3e94ac6afa8"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "left": "30%",
+                "top": "80%",
+                "width": "40%",
+                "iconCls": "favorites",
+                "text": "New Word"
+            },
+            "designerId": "10444bc3-d20b-4001-8fbf-06f169dc7694",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "handler",
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "implHandler": [
+                            "store = Ext.getStore('MyXmlStore');",
+                            "var size = store.getCount();",
+                            "var rand = Math.random(); ",
+                            "var id = Math.round(rand*size);",
+                            "container = Ext.getCmp('myContainer2');",
+                            "container.setHtml('<font size=\"5\"><b><center>'+store.getAt(id).get('word')+'</center></b></font>');",
+                            "container3 = Ext.getCmp('myContainer3');",
+                            "container3.setHtml('');",
+                            "definition = store.getAt(id).get('definition');"
+                        ]
+                    },
+                    "designerId": "007385da-a10e-4606-88c9-9998cfdb0c72"
+                }
+            ]
+        }
+    ]
+}
