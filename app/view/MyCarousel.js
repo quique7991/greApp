@@ -42,6 +42,7 @@ Ext.define('MyApp.view.MyCarousel', {
                 ],
                 store: 'MyXmlStore',
                 grouped: true,
+                infinite: true,
                 indexBar: true,
                 items: [
                     {

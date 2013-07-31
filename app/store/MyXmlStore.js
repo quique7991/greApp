@@ -22,6 +22,7 @@ Ext.define('MyApp.store.MyXmlStore', {
 
     config: {
         autoLoad: true,
+        autoSync: true,
         model: 'MyApp.model.RSSModel',
         storeId: 'MyXmlStore',
         proxy: {

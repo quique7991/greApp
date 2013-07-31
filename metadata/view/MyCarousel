@@ -59,7 +59,8 @@
             "codeClass": null,
             "userConfig": {
                 "store": "MyXmlStore",
-                "grouped": true
+                "grouped": true,
+                "infinite": true
             },
             "designerId": "ed9555b6-5401-4a05-bf6b-cccfc68a86c0",
             "cn": [
