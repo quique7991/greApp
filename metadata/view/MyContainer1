@@ -42,10 +42,10 @@
             "codeClass": null,
             "userConfig": {
                 "centered": false,
-                "left": "27.5%",
+                "left": "20%",
                 "top": "25%",
                 "ui": "forward",
-                "width": "45%",
+                "width": "60%",
                 "iconAlign": "center",
                 "iconCls": null,
                 "text": "I'm feeling lucky"
@@ -149,10 +149,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "left": "30%",
+                "left": "20%",
                 "top": "80%",
-                "width": "40%",
-                "iconCls": "favorites",
+                "width": "60%",
+                "iconCls": null,
                 "text": "New Word"
             },
             "designerId": "10444bc3-d20b-4001-8fbf-06f169dc7694",

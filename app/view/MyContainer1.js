@@ -43,10 +43,10 @@ Ext.define('MyApp.view.MyContainer1', {
 
                 },
                 centered: false,
-                left: '27.5%',
+                left: '20%',
                 top: '25%',
                 ui: 'forward',
-                width: '45%',
+                width: '60%',
                 iconAlign: 'center',
                 text: 'I\'m feeling lucky'
             },
@@ -87,10 +87,9 @@ Ext.define('MyApp.view.MyContainer1', {
                     container3.setHtml('');
                     definition = store.getAt(id).get('definition');
                 },
-                left: '30%',
+                left: '20%',
                 top: '80%',
-                width: '40%',
-                iconCls: 'favorites',
+                width: '60%',
                 text: 'New Word'
             }
         ]
